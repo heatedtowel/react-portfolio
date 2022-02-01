@@ -9,7 +9,7 @@ export default function Repos() {
     },
     {
       'projectName': 'MovieCritix',
-      'repoName': 'test2',
+      'repoName': 'https://github.com/heatedtowel/moviecritix',
     },
     {
       'projectName': 'Password Generator',
@@ -18,19 +18,11 @@ export default function Repos() {
     {
       'projectName': 'Presidential Gallary',
       'repoName': 'test',
-    },
-    {
-      'projectName': 'MovieCritix',
-      'repoName': 'test2',
-    },
-    {
-      'projectName': 'Password Generator',
-      'repoName': 'test2',
     }
   ];
 
   return (
-    <div className='d-flex justify-content-between'>
+    <div className='d-flex justify-content-between p-2'>
       {projects.map((project, i) => {
         return <Repo project={project} key={i} />
       })}

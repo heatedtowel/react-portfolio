@@ -1,11 +1,20 @@
-import Navbar from "../navbar/nav";
+import Navigation from "../navbar/navigation";
+import { Navbar, Container } from "react-bootstrap";
+
 
 export default function Header(props) {
 
   return (
-    <ul className="nav nav-tabs justify-content-end bg-secondary p-3 justify-content-between">
-      <h1>this is a tst</h1>
-      <Navbar updateTab={props.updateTab} />
-    </ul>
+
+    <Navbar bg='dark' variant='dark' >
+      <Container>
+        <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Navigation updateTab={props.updateTab} currentTab={props.currentTab} />
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
+
