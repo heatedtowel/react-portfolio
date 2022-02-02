@@ -1,17 +1,19 @@
 import Navigation from "../navbar/navigation";
-import { Navbar, Container } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
+import './assets/css/style.css'
 
 
 export default function Header(props) {
 
   return (
-
-    <Navbar bg='dark' variant='dark p-4' >
+    <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Jesse Monks</Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
-          <Navigation updateTab={props.updateTab} currentTab={props.currentTab} />
+        <Navbar.Brand>Jesse Monks</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Navigation updateTab={props.updateTab} currentTab={props.currentTab} />
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

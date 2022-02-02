@@ -9,6 +9,7 @@ import codingChallange from './assets/images/matt-walsh-tVkdGtEe2C4-unsplash.jpg
 import eCommerce from './assets/images/mark-konig-Tl8mDaue_II-unsplash.jpg'
 import './assets/css/style.css'
 
+
 export default function Repos() {
 
   const projects = [
@@ -51,13 +52,13 @@ export default function Repos() {
   ];
 
   return (
-    <div className="container-fluid p-5">
+    <div className="container-fluid p-5 min-vh-100">
       <div className="row">
         <div className="col">
           <Card>
             <Card.Img src={projects[0].img} alt="Card image" />
             <Card.ImgOverlay>
-              <Card.Title className='fs-1'>{projects[0].projectName}</Card.Title>
+              <Card.Title className='title fs-1 p-1'>{projects[0].projectName}</Card.Title>
               <a href={projects[0].repoName}><Card.Text>Repository</Card.Text></a>
               <a href={projects[0].deployed}><Card.Text>Deployed App</Card.Text></a>
 
@@ -68,7 +69,7 @@ export default function Repos() {
           <Card>
             <Card.Img src={projects[1].img} alt="Card image" />
             <Card.ImgOverlay>
-              <Card.Title className='fs-1'>{projects[1].projectName}</Card.Title>
+              <Card.Title className='title fs-1'>{projects[1].projectName}</Card.Title>
               <a href={projects[1].repoName}><Card.Text>Repository</Card.Text></a>
               <a href={projects[1].deployed}><Card.Text>Deployed App</Card.Text></a>
             </Card.ImgOverlay>
@@ -78,7 +79,7 @@ export default function Repos() {
           <Card>
             <Card.Img src={projects[2].img} alt="Card image" />
             <Card.ImgOverlay>
-              <Card.Title className='fs-1'>{projects[2].projectName}</Card.Title>
+              <Card.Title className='title fs-1'>{projects[2].projectName}</Card.Title>
               <a href={projects[2].repoName}><Card.Text>Repository</Card.Text></a>
               <a href={projects[2].deployed}><Card.Text>Deployed App</Card.Text></a>
             </Card.ImgOverlay>
@@ -90,7 +91,7 @@ export default function Repos() {
           <Card>
             <Card.Img src={projects[3].img} alt="Card image" />
             <Card.ImgOverlay>
-              <Card.Title className='fs-1'>{projects[3].projectName}</Card.Title>
+              <Card.Title className='title fs-1'>{projects[3].projectName}</Card.Title>
               <a href={projects[3].repoName}><Card.Text>Repository</Card.Text></a>
               <a href={projects[3].deployed}><Card.Text>Deployed App</Card.Text></a>
             </Card.ImgOverlay>
@@ -100,7 +101,7 @@ export default function Repos() {
           <Card>
             <Card.Img src={projects[4].img} alt="Card image" />
             <Card.ImgOverlay>
-              <Card.Title className='fs-1'>{projects[4].projectName}</Card.Title>
+              <Card.Title className='title fs-1'>{projects[4].projectName}</Card.Title>
               <a href={projects[4].repoName}><Card.Text>Repository</Card.Text></a>
               <a href={projects[4].deployed}><Card.Text>Deployed App</Card.Text></a>
             </Card.ImgOverlay>
@@ -110,7 +111,7 @@ export default function Repos() {
           <Card>
             <Card.Img src={projects[5].img} alt="Card image" />
             <Card.ImgOverlay>
-              <Card.Title className='fs-1'>{projects[5].projectName}</Card.Title>
+              <Card.Title className='title fs-1'>{projects[5].projectName}</Card.Title>
               <a href={projects[5].repoName}><Card.Text>Repository</Card.Text></a>
               <a href={projects[5].deployed}><Card.Text>Deployed App</Card.Text></a>
             </Card.ImgOverlay>

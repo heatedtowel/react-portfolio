@@ -15,11 +15,10 @@ function App() {
       <header>
         <Header updateTab={(tab) => setCurrentTab(tab)} currentTab={currentTab} />
       </header>
-      <section className="container bg-secondary mw-100">
+      <section className="container bg-secondary mw-100 min-vh-100">
         {currentTab === 'Projects' ? <RepoList /> : null}
         {currentTab === 'About Me' ? <AboutMe /> : null}
         {currentTab === 'Contact Me' ? <ContactMe /> : null}
-        {/*currentTab === 'Resume' ? <Resume /> : null} */}
       </section>
       <Footer />
     </div>

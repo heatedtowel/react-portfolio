@@ -1,4 +1,5 @@
-import { Nav } from "react-bootstrap";
+import { Button, Nav } from "react-bootstrap";
+
 
 export default function Navigation({ currentTab, updateTab }) {
 
@@ -6,7 +7,7 @@ export default function Navigation({ currentTab, updateTab }) {
 
   return (
     <>
-      {navLinks.map(result => (<Nav.Link key={result} href={`#${result}`} onClick={() => updateTab(result)}>{result}</Nav.Link>)
+      {navLinks.map(result => (<Nav.Link className='navLinks' key={result} href={`#${result}`} onClick={() => updateTab(result)}>{result}</Nav.Link>)
       )
       }
     </>
