@@ -15,7 +15,7 @@ function App() {
       <header>
         <Header updateTab={(tab) => setCurrentTab(tab)} currentTab={currentTab} />
       </header>
-      <section className="container bg-secondary mw-100 min-vh-100">
+      <section className="d-flex container bg-secondary mw-100 min-vh-100 justify-items-center">
         {currentTab === 'Projects' ? <RepoList /> : null}
         {currentTab === 'About Me' ? <AboutMe /> : null}
         {currentTab === 'Contact Me' ? <ContactMe /> : null}

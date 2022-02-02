@@ -52,7 +52,7 @@ export default function Repos() {
   ];
 
   return (
-    <div className="container-fluid p-5 min-vh-100">
+    <div className="p-5 min-vh-100 ">
       <div className="row">
         <div className="col">
           <Card>
