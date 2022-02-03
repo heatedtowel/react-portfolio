@@ -52,9 +52,9 @@ export default function Repos() {
   ];
 
   return (
-    <div className="p-5 min-vh-100 ">
+    <div className="p-5 min-vh-100">
       <div className="row">
-        <div className="col">
+        <div className="col-12 col-md">
           <Card>
             <Card.Img src={projects[0].img} alt="Card image" />
             <Card.ImgOverlay>
@@ -65,7 +65,7 @@ export default function Repos() {
             </Card.ImgOverlay>
           </Card>
         </div>
-        <div className="col-6 mb-2">
+        <div className="col-12 col-md-6 mb-2">
           <Card>
             <Card.Img src={projects[1].img} alt="Card image" />
             <Card.ImgOverlay>
@@ -75,7 +75,7 @@ export default function Repos() {
             </Card.ImgOverlay>
           </Card>
         </div>
-        <div className="col">
+        <div className="col-12 col-md">
           <Card>
             <Card.Img src={projects[2].img} alt="Card image" />
             <Card.ImgOverlay>
@@ -87,7 +87,7 @@ export default function Repos() {
         </div>
       </div>
       <div className="row">
-        <div className="col">
+        <div className="col-12 col-md">
           <Card>
             <Card.Img src={projects[3].img} alt="Card image" />
             <Card.ImgOverlay>
@@ -97,7 +97,7 @@ export default function Repos() {
             </Card.ImgOverlay>
           </Card>
         </div>
-        <div className="col-5">
+        <div className="col-12 col-md-5">
           <Card>
             <Card.Img src={projects[4].img} alt="Card image" />
             <Card.ImgOverlay>
@@ -107,7 +107,7 @@ export default function Repos() {
             </Card.ImgOverlay>
           </Card>
         </div>
-        <div className="col">
+        <div className="col-12 col-md">
           <Card>
             <Card.Img src={projects[5].img} alt="Card image" />
             <Card.ImgOverlay>

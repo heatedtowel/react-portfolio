@@ -8,14 +8,14 @@ import Footer from './components/footer/footer'
 
 function App() {
 
-  const [currentTab, setCurrentTab] = useState('Projects');
+  const [currentTab, setCurrentTab] = useState('About Me');
 
   return (
-    <div className="App">
+    <div className="App bg-secondary">
       <header>
         <Header updateTab={(tab) => setCurrentTab(tab)} currentTab={currentTab} />
       </header>
-      <section className="d-flex container bg-secondary mw-100 min-vh-100 justify-items-center">
+      <section className="d-flex container bg-secondary min-vh-100 justify-items-center">
         {currentTab === 'Projects' ? <RepoList /> : null}
         {currentTab === 'About Me' ? <AboutMe /> : null}
         {currentTab === 'Contact Me' ? <ContactMe /> : null}
