@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import pdf from '../navbar/assets/resume.pdf';
+import pdf from '../header/assets/Resume.pdf';
 
 import { FaPortrait, FaGithub, FaLinkedinIn, FaMailBulk } from 'react-icons/fa';
 

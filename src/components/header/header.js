@@ -1,7 +1,7 @@
 import Navigation from "../navbar/navigation";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import './assets/css/style.css'
-import Resume from '../navbar/assets/resume.pdf'
+import Resume from './assets/Resume.pdf'
 
 
 export default function Header(props) {

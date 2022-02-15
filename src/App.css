@@ -7,6 +7,12 @@ body{
   min-height: 100vh;
 }
 
+.App {
+  background: -moz-linear-gradient(top, #ACACAC 0%, #05005A 100%);
+background: -webkit-linear-gradient(top, #ACACAC 0%, #05005A 100%);
+background: linear-gradient(to bottom, #ACACAC 0%, #05005A 100%);
+}
+
 .container {
   height: 100%;
 }

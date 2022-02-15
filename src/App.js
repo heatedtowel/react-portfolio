@@ -11,11 +11,11 @@ function App() {
   const [currentTab, setCurrentTab] = useState('About Me');
 
   return (
-    <div className="App bg-secondary">
+    <div className="App">
       <header>
         <Header updateTab={(tab) => setCurrentTab(tab)} currentTab={currentTab} />
       </header>
-      <section className="d-flex container bg-secondary min-vh-100 justify-items-center">
+      <section className="d-flex container min-vh-100 justify-items-center">
         {currentTab === 'Projects' ? <RepoList /> : null}
         {currentTab === 'About Me' ? <AboutMe /> : null}
         {currentTab === 'Contact Me' ? <ContactMe /> : null}
