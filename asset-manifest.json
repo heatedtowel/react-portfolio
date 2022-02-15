@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.97fbc03c.css",
-    "main.js": "/react-portfolio/static/js/main.75980d32.js",
-    "static/media/matt-walsh-tVkdGtEe2C4-unsplash.jpg": "/react-portfolio/static/media/matt-walsh-tVkdGtEe2C4-unsplash.6b1f4ad16dfb1a23ded6.jpg",
-    "static/media/myke-simon-atsUqIm3wxo-unsplash.jpg": "/react-portfolio/static/media/myke-simon-atsUqIm3wxo-unsplash.0142d2a441b36861ab51.jpg",
-    "static/media/noaa-ZVhm6rEKEX8-unsplash.jpg": "/react-portfolio/static/media/noaa-ZVhm6rEKEX8-unsplash.36d9f89eafea50d94f0f.jpg",
-    "static/media/jason-dent-3wPJxh-piRw-unsplash.jpg": "/react-portfolio/static/media/jason-dent-3wPJxh-piRw-unsplash.d1ff44eb811f4d56b0d1.jpg",
-    "static/media/mark-konig-Tl8mDaue_II-unsplash.jpg": "/react-portfolio/static/media/mark-konig-Tl8mDaue_II-unsplash.21feb7352924abfbaf99.jpg",
-    "static/media/gabby-orcutt-3QUklJkVFyY-unsplash.jpg": "/react-portfolio/static/media/gabby-orcutt-3QUklJkVFyY-unsplash.2d32dc4236dc689a5f34.jpg",
-    "static/media/resume.pdf": "/react-portfolio/static/media/resume.8b50705c938563634b13.pdf",
+    "main.css": "/react-portfolio/static/css/main.c77c3701.css",
+    "main.js": "/react-portfolio/static/js/main.fe35d83f.js",
+    "static/media/matt-walsh-tVkdGtEe2C4-unsplash.jpg": "/react-portfolio/static/media/matt-walsh-tVkdGtEe2C4-unsplash.5aeb723656fac7c552a1.jpg",
+    "static/media/myke-simon-atsUqIm3wxo-unsplash.jpg": "/react-portfolio/static/media/myke-simon-atsUqIm3wxo-unsplash.d4b7b91a2b7e37e3c87a.jpg",
+    "static/media/mark-konig-Tl8mDaue_II-unsplash.jpg": "/react-portfolio/static/media/mark-konig-Tl8mDaue_II-unsplash.5c599d957493b8e2a8c5.jpg",
+    "static/media/jason-dent-3wPJxh-piRw-unsplash.jpg": "/react-portfolio/static/media/jason-dent-3wPJxh-piRw-unsplash.08762391e6194befca6c.jpg",
+    "static/media/noaa-ZVhm6rEKEX8-unsplash.jpg": "/react-portfolio/static/media/noaa-ZVhm6rEKEX8-unsplash.8a20e08bb212b32dd66c.jpg",
+    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.10c9d91da584432d609e.pdf",
+    "static/media/gabby-orcutt-3QUklJkVFyY-unsplash.jpg": "/react-portfolio/static/media/gabby-orcutt-3QUklJkVFyY-unsplash.cda656ddaf1aaa3bab31.jpg",
     "index.html": "/react-portfolio/index.html",
-    "main.97fbc03c.css.map": "/react-portfolio/static/css/main.97fbc03c.css.map",
-    "main.75980d32.js.map": "/react-portfolio/static/js/main.75980d32.js.map"
+    "main.c77c3701.css.map": "/react-portfolio/static/css/main.c77c3701.css.map",
+    "main.fe35d83f.js.map": "/react-portfolio/static/js/main.fe35d83f.js.map"
   },
   "entrypoints": [
-    "static/css/main.97fbc03c.css",
-    "static/js/main.75980d32.js"
+    "static/css/main.c77c3701.css",
+    "static/js/main.fe35d83f.js"
   ]
 }
