@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.c77c3701.css",
-    "main.js": "/react-portfolio/static/js/main.4b3eaae0.js",
+    "main.js": "/react-portfolio/static/js/main.c0ee291c.js",
     "static/media/matt-walsh-tVkdGtEe2C4-unsplash.jpg": "/react-portfolio/static/media/matt-walsh-tVkdGtEe2C4-unsplash.5aeb723656fac7c552a1.jpg",
     "static/media/myke-simon-atsUqIm3wxo-unsplash.jpg": "/react-portfolio/static/media/myke-simon-atsUqIm3wxo-unsplash.d4b7b91a2b7e37e3c87a.jpg",
     "static/media/mark-konig-Tl8mDaue_II-unsplash.jpg": "/react-portfolio/static/media/mark-konig-Tl8mDaue_II-unsplash.5c599d957493b8e2a8c5.jpg",
@@ -9,12 +9,13 @@
     "static/media/noaa-ZVhm6rEKEX8-unsplash.jpg": "/react-portfolio/static/media/noaa-ZVhm6rEKEX8-unsplash.8a20e08bb212b32dd66c.jpg",
     "static/media/gabby-orcutt-3QUklJkVFyY-unsplash.jpg": "/react-portfolio/static/media/gabby-orcutt-3QUklJkVFyY-unsplash.cda656ddaf1aaa3bab31.jpg",
     "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.ecd9d33e71549acffba8.pdf",
+    "static/media/vinyl.jpg": "/react-portfolio/static/media/vinyl.ac7fbb2660c1c57837c3.jpg",
     "index.html": "/react-portfolio/index.html",
     "main.c77c3701.css.map": "/react-portfolio/static/css/main.c77c3701.css.map",
-    "main.4b3eaae0.js.map": "/react-portfolio/static/js/main.4b3eaae0.js.map"
+    "main.c0ee291c.js.map": "/react-portfolio/static/js/main.c0ee291c.js.map"
   },
   "entrypoints": [
     "static/css/main.c77c3701.css",
-    "static/js/main.4b3eaae0.js"
+    "static/js/main.c0ee291c.js"
   ]
 }
