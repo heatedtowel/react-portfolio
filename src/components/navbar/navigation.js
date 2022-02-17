@@ -3,7 +3,7 @@ import { Nav } from "react-bootstrap";
 
 export default function Navigation({ currentTab, updateTab }) {
 
-  const navLinks = ["About Me", "Projects", "Contact Me"]
+  const navLinks = ["About Me", "Projects"]
 
   return (
     <>

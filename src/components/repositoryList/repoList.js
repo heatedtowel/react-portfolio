@@ -6,6 +6,7 @@ import {
 } from 'react-bootstrap'
 
 import Popover from '../popover/popover'
+import vinylCollection from './assets/images/vinyl.jpg';
 import presGallary from './assets/images/gabby-orcutt-3QUklJkVFyY-unsplash.jpg';
 import moviecritix from './assets/images/myke-simon-atsUqIm3wxo-unsplash.jpg';
 import passwordGenerator from './assets/images/jason-dent-3wPJxh-piRw-unsplash.jpg';
@@ -18,6 +19,12 @@ import './assets/css/style.css'
 export default function Repos() {
 
   const projects = [
+    {
+      'projectName': 'Vinyl Collection',
+      'repoName': 'https://github.com/simone188535/apollo-mern-mongo',
+      'deployed': 'https://guarded-mesa-92064.herokuapp.com/',
+      'img': vinylCollection
+    },
     {
       'projectName': 'Presidential Gallary',
       'repoName': 'https://github.com/mattholtmoore/presidential-gallery',
@@ -58,9 +65,9 @@ export default function Repos() {
 
   return (
     <Container fluid>
-      <Row className='pt-4'>
-        <Col>
-          <Card className="bg-dark text-white">
+      <Row>
+        <Col className='col-12 col-sm-6 mt-4'>
+          <Card>
             <Card.Img src={projects[0].img} alt="Card image" />
             <Card.ImgOverlay>
               <Card.Title>
@@ -69,8 +76,8 @@ export default function Repos() {
             </Card.ImgOverlay>
           </Card>
         </Col>
-        <Col>
-          <Card className="bg-dark text-white">
+        <Col className='mt-4'>
+          <Card>
             <Card.Img src={projects[1].img} alt="Card image" />
             <Card.ImgOverlay>
               <Card.Title>
@@ -80,9 +87,9 @@ export default function Repos() {
           </Card>
         </Col>
       </Row>
-      <Row className='pt-4'>
-        <Col>
-          <Card className="bg-dark text-white">
+      <Row>
+        <Col className='col-12 col-sm-4 mt-4'>
+          <Card>
             <Card.Img src={projects[2].img} alt="Card image" />
             <Card.ImgOverlay>
               <Card.Title>
@@ -91,8 +98,8 @@ export default function Repos() {
             </Card.ImgOverlay>
           </Card>
         </Col>
-        <Col>
-          <Card className="bg-dark text-white">
+        <Col className='mt-4'>
+          <Card className='col-12'>
             <Card.Img src={projects[3].img} alt="Card image" />
             <Card.ImgOverlay>
               <Card.Title>
@@ -101,12 +108,34 @@ export default function Repos() {
             </Card.ImgOverlay>
           </Card>
         </Col>
-        <Col>
-          <Card className="bg-dark text-white">
+        <Col className='mt-4'>
+          <Card className='col-12'>
             <Card.Img src={projects[4].img} alt="Card image" />
             <Card.ImgOverlay>
               <Card.Title>
                 <Popover repo={projects[4]} />
+              </Card.Title>
+            </Card.ImgOverlay>
+          </Card>
+        </Col>
+      </Row>
+      <Row>
+        <Col className='mt-4'>
+          <Card className='col-12'>
+            <Card.Img src={projects[5].img} alt="Card image" />
+            <Card.ImgOverlay>
+              <Card.Title>
+                <Popover repo={projects[5]} />
+              </Card.Title>
+            </Card.ImgOverlay>
+          </Card>
+        </Col>
+        <Col>
+          <Card className='col-12 mt-4'>
+            <Card.Img src={projects[6].img} alt="Card image" />
+            <Card.ImgOverlay>
+              <Card.Title>
+                <Popover repo={projects[6]} />
               </Card.Title>
             </Card.ImgOverlay>
           </Card>
