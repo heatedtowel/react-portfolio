@@ -1,10 +1,4 @@
-import {
-  Card,
-  Container,
-  Row,
-  Col,
-} from 'react-bootstrap'
-
+import { Card, Container, Row, Col, } from 'react-bootstrap'
 import Popover from '../popover/popover'
 import vinylCollection from './assets/images/vinyl.jpg';
 import presGallary from './assets/images/gabby-orcutt-3QUklJkVFyY-unsplash.jpg';

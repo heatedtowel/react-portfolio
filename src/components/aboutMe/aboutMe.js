@@ -5,7 +5,7 @@ export default function AboutMe() {
     <div className="infoCard row  mt-5 justify-content-center align-items-center col-11 col-lg-6 m-auto rounded">
       <form className="form container col-12 col-lg-9 p-1">
         <div>
-          <h4 className="text-light text-center">About me</h4>
+          <h2 className="text-light text-center">About me</h2>
 
         </div>
         <div>
