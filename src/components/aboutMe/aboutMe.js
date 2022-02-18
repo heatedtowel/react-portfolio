@@ -1,8 +1,8 @@
-import { Card } from 'react-bootstrap'
+import './assets/css/aboutMe.css'
 
 export default function AboutMe() {
   return (
-    <div className="row bg-secondary mt-5 justify-content-center align-items-center col-11 col-lg-6 m-auto rounded">
+    <div className="infoCard row  mt-5 justify-content-center align-items-center col-11 col-lg-6 m-auto rounded">
       <form className="form container col-12 col-lg-9 p-1">
         <div>
           <h4 className="text-light text-center">About me</h4>

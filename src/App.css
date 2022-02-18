@@ -8,9 +8,10 @@ body{
 }
 
 .App {
-  background: -moz-linear-gradient(top, #ACACAC 0%, #05005A 100%);
-background: -webkit-linear-gradient(top, #ACACAC 0%, #05005A 100%);
-background: linear-gradient(to bottom, #ACACAC 0%, #05005A 100%);
+  background: #888888;
+  background: -moz-linear-gradient(top, #888888 0%, #05005A 100%);
+  background: -webkit-linear-gradient(top, #888888 0%, #05005A 100%);
+  background: linear-gradient(to bottom, #888888 0%, #05005A 100%);
 }
 
 .container {
