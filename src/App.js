@@ -10,10 +10,14 @@ function App() {
 
   const [currentTab, setCurrentTab] = useState('About Me');
 
+  const updateTab = (tab) => {
+    setCurrentTab(tab)
+  }
+
   return (
     <div className="App">
       <header>
-        <Header updateTab={(tab) => setCurrentTab(tab)} currentTab={currentTab} />
+        <Header updateTab={updateTab} />
       </header>
       <section className="d-flex container min-vh-100 justify-items-center">
         {currentTab === 'Projects' ? <RepoList /> : null}

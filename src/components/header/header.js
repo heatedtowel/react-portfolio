@@ -13,7 +13,7 @@ export default function Header(props) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Navigation updateTab={props.updateTab} currentTab={props.currentTab} />
+            <Navigation updateTab={props.updateTab} />
             <Nav.Link className='navLinks' key='resume' href={Resume}>Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>

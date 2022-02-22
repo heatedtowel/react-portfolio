@@ -17,42 +17,49 @@ export default function Repos() {
       'projectName': 'Vinyl Collection',
       'repoName': 'https://github.com/simone188535/apollo-mern-mongo',
       'deployed': 'https://guarded-mesa-92064.herokuapp.com/',
+      'description': 'This is a website that allows the user to search and select vinyl records of their choosing by Artist, Song or Genre - also allowing them to add individual vinyls to a collection of favorites and display them on their personal profile page. Technology: React, Apollo GraphQL, Node, Express, Mongoose and MongoDB',
       'img': vinylCollection
     },
     {
       'projectName': 'Presidential Gallary',
       'repoName': 'https://github.com/mattholtmoore/presidential-gallery',
       'deployed': 'https://floating-chamber-62136.herokuapp.com/',
+      'description': 'Allows a user to view current and past presidents along with the ability to log in and out to find additional details on specific presidents.',
       'img': presGallary
     },
     {
       'projectName': 'MovieCritix',
       'repoName': 'https://github.com/heatedtowel/moviecritix',
       'deployed': 'https://heatedtowel.github.io/moviecritix/',
+      'description': 'Search engine for movies that provide detailed information on the movie along with correlating Gifs. You may also randomize the movie search if looking for something new to watch.',
       'img': moviecritix
     },
     {
       'projectName': 'Password Generator',
       'repoName': 'https://github.com/heatedtowel/password-generator',
       'deployed': 'https://heatedtowel.github.io/password-generator/',
+      'description': 'Generates a password based on user feedback on complexity.',
       'img': passwordGenerator
     },
     {
       'projectName': 'Weather Dashboard',
       'repoName': 'https://github.com/heatedtowel/weather-dashboard',
       'deployed': 'https://heatedtowel.github.io/weather-dashboard/',
+      'description': 'Find the weather in your city along with a 5-day forcast. Also stores previous search results for later.',
       'img': weatherDashboard
     },
     {
       'projectName': 'Coding Challange',
       'repoName': 'https://github.com/heatedtowel/coding-challange',
       'deployed': 'https://heatedtowel.github.io/coding-challange/',
+      'description': 'A simple game that tests your knowledge on JS, HTML, and CSS each incorrect answer will deduct time from the current time remaining. Built in vanilla JS',
       'img': codingChallange
     },
     {
       'projectName': 'E-Commerce Back End',
       'repoName': 'https://github.com/heatedtowel/e-commerce-back-end',
       'deployed': 'https://heatedtowel.github.io/e-commerce-back-end/',
+      'description': 'The goal is to be able to update the products/categories/tags with api requests. Each will be able to add/update/remove/find by id using insomnia requests.',
       'img': eCommerce
     }
   ];

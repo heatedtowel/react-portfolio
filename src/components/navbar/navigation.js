@@ -7,7 +7,7 @@ export default function Navigation({ currentTab, updateTab }) {
 
   return (
     <>
-      {navLinks.map(result => (<Nav.Link className='navLinks' key={result} href={`#${result}`} onClick={() => updateTab(result)}>{result}</Nav.Link>)
+      {navLinks.map(tab => (<Nav.Link className='navLinks' key={tab} href={`#${tab}`} onClick={() => updateTab(tab)}>{tab}</Nav.Link>)
       )
       }
     </>
