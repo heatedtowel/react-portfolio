@@ -7,11 +7,18 @@ body{
   min-height: 100vh;
 }
 
-.App {
+.App--light {
   background: #888888;
   background: -moz-linear-gradient(top, #888888 0%, #05005A 100%);
   background: -webkit-linear-gradient(top, #888888 0%, #05005A 100%);
   background: linear-gradient(to bottom, #888888 0%, #05005A 100%);
+}
+
+.App--dark {
+  background: #888888;
+  background: -moz-linear-gradient(top, #152028 0%, #05005A 100%);
+  background: -webkit-linear-gradient(top, #152028 0%, #05005A 100%);
+  background: linear-gradient(to bottom, #152028 0%, #05005A 100%);
 }
 
 .container {

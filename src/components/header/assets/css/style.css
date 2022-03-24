@@ -1,3 +1,8 @@
 .navLinks:hover {
   color: red
 }
+
+.themeBtn {
+  border: 1px solid #888888;
+  border-radius: .3rem;
+}
