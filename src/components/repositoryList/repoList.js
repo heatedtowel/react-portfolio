@@ -21,7 +21,7 @@ export default function Repos() {
       'img': vinylCollection
     },
     {
-      'projectName': 'Presidential Gallary',
+      'projectName': 'Presidential Gallery',
       'repoName': 'https://github.com/mattholtmoore/presidential-gallery',
       'deployed': 'https://floating-chamber-62136.herokuapp.com/',
       'description': 'Allows a user to view current and past presidents along with the ability to log in and out to find additional details on specific presidents.',

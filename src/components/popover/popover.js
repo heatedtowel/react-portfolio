@@ -1,7 +1,7 @@
 import { Popover, OverlayTrigger, Button, Tooltip } from 'react-bootstrap'
 import './assets/css/popover.css'
 
-export default function Example(props) {
+export default function Overlay(props) {
 
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>
