@@ -1,11 +1,16 @@
 import Navigation from "../navbar/navigation";
-import { Navbar, Container, Nav, Button, ButtonGroup } from "react-bootstrap";
-import './assets/css/style.css'
+import { Navbar, Container, Nav } from "react-bootstrap";
+import { motion } from 'framer-motion'
+import './assets/css/header.css'
 import Resume from './assets/Resume.pdf'
-import { FaRegLightbulb, FaLightbulb } from "react-icons/fa";
 
+export default function Header({ theme, updateTab, updateTheme }) {
 
-export default function Header({ updateTab, updateTheme }) {
+  const spring = {
+    type: "spring",
+    stiffness: 200,
+    damping: 15,
+  };
 
   return (
     <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
@@ -14,13 +19,12 @@ export default function Header({ updateTab, updateTheme }) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Navigation updateTab={updateTab} updateTheme={updateTheme} />
+            <Navigation updateTab={updateTab} />
             <Nav.Link className='navLinks' key='resume' href={Resume}>Resume</Nav.Link>
           </Nav>
-          <ButtonGroup aria-label="Basic example" className="themeBtn">
-            <Button size="sm" onClick={() => updateTheme('App--light')} variant="light"> <FaLightbulb /> </Button>
-            <Button size="sm" onClick={() => updateTheme('App--dark')} variant="dark"> <FaRegLightbulb /> </Button>
-          </ButtonGroup>
+          <div className="switch" data-isOn={theme} onClick={() => updateTheme()}>
+            <motion.div className="handle" data-isOn={theme} layout transition={spring} />
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

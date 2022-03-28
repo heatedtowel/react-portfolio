@@ -1,20 +1,18 @@
 .App {
   font-family: 'Lora', serif;
-  text-align: center;
+  text-align: center;;
+  background: #888888;
+  background: -moz-linear-gradient(top, #888888 0%, #05005A 100%);
+  background: -webkit-linear-gradient(top, #888888 0%, #05005A 100%);
+  background: linear-gradient(to bottom, #888888 0%, #05005A 100%);
+  transition: background 3s;
 }
 
 body{
   min-height: 100vh;
 }
 
-.App--light {
-  background: #888888;
-  background: -moz-linear-gradient(top, #888888 0%, #05005A 100%);
-  background: -webkit-linear-gradient(top, #888888 0%, #05005A 100%);
-  background: linear-gradient(to bottom, #888888 0%, #05005A 100%);
-}
-
-.App--dark {
+.App[data-theme="false"] {
   background: #888888;
   background: -moz-linear-gradient(top, #152028 0%, #05005A 100%);
   background: -webkit-linear-gradient(top, #152028 0%, #05005A 100%);
