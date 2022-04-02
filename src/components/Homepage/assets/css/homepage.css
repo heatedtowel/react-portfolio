@@ -1,0 +1,14 @@
+.infoCard {
+    left: 10px;
+    opacity: 0;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.43); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.43);
+}
+
+.aboutMe {
+    opacity: 0;
+}
+
+.bio {
+    opacity: 0;
+}
