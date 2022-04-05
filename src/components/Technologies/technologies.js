@@ -2,7 +2,7 @@ import { Row, Col } from 'react-bootstrap'
 import { motion } from 'framer-motion'
 import React from 'react'
 
-const technologies = (animation, transition) => {
+const technologies = ({ variant }) => {
 
   const technologies = ['HTML', 'CSS', 'SCSS', 'JavaScript', 'MongoDB', 'Mongoose', 'MySQL']
 
@@ -15,8 +15,8 @@ const technologies = (animation, transition) => {
           {technologies.map((tech) => {
             return (
               <motion.li
-                animate={animation.main}
-                transition={transition.main} >
+                variants="variant"
+              >
                 {tech}
               </motion.li>
             )
@@ -28,8 +28,8 @@ const technologies = (animation, transition) => {
           {frameworks.map((tech) => {
             return (
               <motion.li
-                animate={animation.main}
-                transition={transition.main} >
+                variants="variant"
+              >
                 {tech}
               </motion.li>
             )

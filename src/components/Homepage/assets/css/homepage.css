@@ -1,8 +1,8 @@
 .infoCard {
     left: 10px;
     opacity: 0;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.43); 
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.43);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.43);
 }
 
 .aboutMe {
@@ -12,3 +12,17 @@
 .bio {
     opacity: 0;
 }
+
+/* .cardTitle {
+    display: grid;
+    grid-;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    outline: auto;
+    height: 5rem;
+    width: fit-content;
+    padding: 3rem;
+    margin-top: 5rem;
+
+} */
