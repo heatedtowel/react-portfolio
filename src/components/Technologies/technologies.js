@@ -12,12 +12,16 @@ const technologies = ({ variant }) => {
     <Row>
       <Col>
         <ul>
-          {technologies.map((tech) => {
+          {technologies.map((item) => {
             return (
               <motion.li
-                variants="variant"
+                key={item}
+                initial={{ opacity: 0 }}
+                variants={variant.skills}
+                animate='card'
+                style={{ color: 'white' }}
               >
-                {tech}
+                {item}
               </motion.li>
             )
           })}
@@ -25,12 +29,16 @@ const technologies = ({ variant }) => {
       </Col>
       <Col>
         <ul>
-          {frameworks.map((tech) => {
+          {frameworks.map((item) => {
             return (
               <motion.li
-                variants="variant"
+                key={item}
+                initial={{ opacity: 0 }}
+                variants={variant.skills}
+                animate='card'
+                style={{ color: 'white' }}
               >
-                {tech}
+                {item}
               </motion.li>
             )
           })}
