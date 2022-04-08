@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { Tabs, Tab, Row, Col, ListGroup } from 'react-bootstrap'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import Motivation from '../Motivation/motivation';
 import AboutMe from '../AboutMe/aboutMe';
 import Technologies from '../Technologies/technologies';
@@ -12,12 +11,11 @@ export default function Homepage() {
 
   const [tab, setTab] = useState('');
 
-  const variant = {
+  const homeVariant = {
     aboutMe: {
       card: {
-        opacity: tab === 'About Me' ? 1 : 0,
-        // scale: [0, 1],
-        y: tab === 'About Me' ? '300px' : 0,
+        opacity: 1,
+        y: '300px',
         transition: {
           opacity: { duration: 1.0 },
           scale: { duration: 1.25 },
@@ -27,9 +25,8 @@ export default function Homepage() {
     },
     motivation: {
       card: {
-        opacity: tab === 'Motivation' ? 1 : 0,
-        // scale: [0, 1],
-        y: tab === 'Motivation' ? '200px' : 0,
+        opacity: 1,
+        y: '300px',
         transition: {
           opacity: { duration: 1.0 },
           scale: { duration: 1.25 },
@@ -39,36 +36,33 @@ export default function Homepage() {
     },
     skills: {
       card: {
-        opacity: tab === 'Skills' ? 1 : 0,
-        // scale: [0, 1],
-        y: tab === 'Skills' ? '50px' : 0,
+        opacity: 1,
+        y: '300px',
         transition: {
           opacity: { duration: 1.0 },
           scale: { duration: 1.25 },
           y: { duration: 1.0 }
-        }
+        },
       }
     },
-    text: {
-      opacity: 1,
-      scale: [0, 1],
-      x: [-400, 0],
-      transition: {
-        duration: 2
-      }
-    }
   }
 
   return (
-    <div>
-      {tabs.map((tab) => {
-        return (
-          <button onClick={() => setTab(tab)}>{tab}</button>
-        )
-      })}
-      <AboutMe variant={variant} />
-      <Motivation variant={variant} />
-      <Technologies variant={variant} />
-    </div >
+    <AnimatePresence>
+      <div >
+        <div>
+          {tabs.map((tab) => {
+            return (
+              <motion.button
+                onClick={() => setTab(tab)}
+              >{tab}</motion.button>
+            )
+          })}
+        </div>
+        {tab === 'About Me' ? <AboutMe key='About Me' variant={homeVariant} tab={tab} /> : null}
+        {tab === 'Motivation' ? <Motivation key='Motivation' variant={homeVariant} tab={tab} /> : null}
+        {tab === 'Skills' ? <Technologies key='Skills' variant={homeVariant} tab={tab} /> : null}
+      </div >
+    </AnimatePresence >
   )
 };

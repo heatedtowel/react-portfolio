@@ -24,7 +24,7 @@ function App() {
       <header>
         <Header updateTab={updateTab} updateTheme={updateTheme} theme={theme} />
       </header>
-      <section className="d-flex container min-vh-100 justify-items-center">
+      <section className="d-flex container min-vh-100">
         {currentTab === 'Projects' ? <RepoList /> : null}
         {currentTab === 'About Me' ? <Homepage /> : null}
         {currentTab === 'Contact Me' ? <ContactMe /> : null}
