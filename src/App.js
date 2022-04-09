@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import Header from './components/header/header';
 import RepoList from './components/repositoryList/repoList';
 import Homepage from './components/Homepage/homepage.js'
@@ -19,16 +20,46 @@ function App() {
     setCurrentTheme(!theme)
   }
 
+  const appVariant = {
+    tabInitial: {
+      opacity: 0,
+      transition: {
+        opacity: { duration: 1.5 },
+      }
+    },
+    tabAnimate: {
+      opacity: 1,
+      transition: {
+        opacity: { duration: 1.5 },
+      }
+    },
+    tabExit: {
+      opacity: 0,
+      transition: {
+        scaleY: { duration: 1.5 },
+      }
+    }
+  }
+
   return (
-    <div className='App' data-theme={theme}>
+    <div className='App' data-theme={theme} key={currentTab}>
       <header>
         <Header updateTab={updateTab} updateTheme={updateTheme} theme={theme} />
       </header>
-      <section className="d-flex container min-vh-100">
-        {currentTab === 'Projects' ? <RepoList /> : null}
-        {currentTab === 'About Me' ? <Homepage /> : null}
-        {currentTab === 'Contact Me' ? <ContactMe /> : null}
-      </section>
+      <AnimatePresence exitBeforeEnter>
+        <motion.section
+          key={currentTab}
+          className="d-flex container min-vh-100"
+          variants={appVariant}
+          initial='tabInitial'
+          animate='tabAnimate'
+          exit='tabExit'
+        >
+          {currentTab === 'Projects' ? <RepoList /> : null}
+          {currentTab === 'About Me' ? <Homepage /> : null}
+          {currentTab === 'Contact Me' ? <ContactMe /> : null}
+        </motion.section>
+      </AnimatePresence >
       <Footer />
     </div>
   );
