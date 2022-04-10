@@ -23,7 +23,12 @@ export default function Header({ theme, updateTab, updateTheme }) {
             <Nav.Link className='navLinks' key='resume' href={Resume}>Resume</Nav.Link>
           </Nav>
           <div className="switch" data-isOn={theme} onClick={() => updateTheme()}>
-            <motion.div className="handle" data-isOn={theme} layout transition={spring} />
+            <motion.div
+              className="handle"
+              data-isOn={theme}
+              transition={spring}
+              layout
+            />
           </div>
         </Navbar.Collapse>
       </Container>

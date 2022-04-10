@@ -1,7 +1,7 @@
 .App {
   font-family: 'Lora', serif;
-  background: #b9b9b9;
-  transition: background 3s;
+  background: #FFFBFF;
+  transition: background .3s;
 }
 
 body {
@@ -16,4 +16,7 @@ body {
   height: 100%;
 }
 
-.app--container {}
+.app--container {
+  display: flex;
+  min-height: 100vh;
+}

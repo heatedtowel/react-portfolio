@@ -49,14 +49,14 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <motion.section
           key={currentTab}
-          className="d-flex container min-vh-100"
+          className="app--container"
           variants={appVariant}
           initial='tabInitial'
           animate='tabAnimate'
           exit='tabExit'
         >
           {currentTab === 'Projects' ? <RepoList /> : null}
-          {currentTab === 'About Me' ? <Homepage /> : null}
+          {currentTab === 'About Me' ? <Homepage theme={theme} /> : null}
           {currentTab === 'Contact Me' ? <ContactMe /> : null}
         </motion.section>
       </AnimatePresence >

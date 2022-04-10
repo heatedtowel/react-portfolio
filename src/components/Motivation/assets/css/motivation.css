@@ -1,0 +1,23 @@
+:root {
+  --lightText: #05005A;
+  --darkText: #FFFBFF;
+  --background: #5D737E;
+}
+
+.motivation {
+  color: var(--lightText);
+  padding: 3rem;
+  margin: 0 20rem;
+  letter-spacing: 2px;
+  border: .2rem solid var(--lightText);
+  transition: color .3s, border .3s, box-shadow .3s;
+  -webkit-box-shadow: 5px 5px 9px 5px rgba(0, 0, 0, 0.39);
+  box-shadow: 5px 5px 9px 5px rgba(0, 0, 0, 0.39);
+}
+
+.motivation[data-theme='false'] {
+  color: var(--darkText);
+  border: .2rem solid var(--darkText);
+  -webkit-box-shadow: 5px 5px 9px 5px rgba(111, 111, 111, 0.39);
+  box-shadow: 5px 5px 9px 5px rgba(111, 111, 111, 0.39);
+}

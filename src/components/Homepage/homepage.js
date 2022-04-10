@@ -5,7 +5,7 @@ import AboutMe from '../AboutMe/aboutMe';
 import Technologies from '../Technologies/technologies';
 import './assets/css/homepage.css'
 
-export default function Homepage() {
+export default function Homepage({ theme }) {
 
   const tabs = ['About Me', 'Motivation', 'Skills']
 
@@ -19,7 +19,7 @@ export default function Homepage() {
         transition: {
           opacity: { duration: 1.0 },
           scale: { duration: 1.25 },
-          y: { duration: 1.0 }
+          y: { duration: .5 }
         }
       }
     },
@@ -30,7 +30,7 @@ export default function Homepage() {
         transition: {
           opacity: { duration: 1.0 },
           scale: { duration: 1.25 },
-          y: { duration: 1.0 }
+          y: { duration: .5 }
         }
       }
     },
@@ -41,7 +41,7 @@ export default function Homepage() {
         transition: {
           opacity: { duration: 1.0 },
           scale: { duration: 1.25 },
-          y: { duration: 1.0 }
+          y: { duration: .5 }
         },
       }
     },
@@ -49,20 +49,27 @@ export default function Homepage() {
 
   return (
     <AnimatePresence>
-      <div >
+      <div className='homepage--container'>
         <div>
           {tabs.map((tab) => {
             return (
               <motion.button
+                className='btn-tabs'
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: .9 }}
+                data-theme={theme}
                 onClick={() => setTab(tab)}
-              >{tab}</motion.button>
+              >{tab}
+              </motion.button>
             )
           })}
         </div>
-        {tab === 'About Me' ? <AboutMe key='About Me' variant={homeVariant} tab={tab} /> : null}
-        {tab === 'Motivation' ? <Motivation key='Motivation' variant={homeVariant} tab={tab} /> : null}
-        {tab === 'Skills' ? <Technologies key='Skills' variant={homeVariant} tab={tab} /> : null}
-      </div >
+        <div className='tabs'>
+          {tab === 'About Me' ? <AboutMe key='About Me' variant={homeVariant} theme={theme} /> : null}
+          {tab === 'Motivation' ? <Motivation key='Motivation' variant={homeVariant} theme={theme} /> : null}
+          {tab === 'Skills' ? <Technologies key='Skills' variant={homeVariant} theme={theme} /> : null}
+        </div >
+      </div>
     </AnimatePresence >
   )
 };

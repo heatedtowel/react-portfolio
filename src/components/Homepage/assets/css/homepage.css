@@ -1,4 +1,23 @@
+:root {
+  --lightText: #05005A;
+  --darkText: #FFFBFF;
+  --background: #5D737E;
+}
+
 .homepage--container {
-  flex-wrap: wrap;
-  justify-content: center;
+  display: flex;
+}
+
+.btn-tabs {
+  padding: .5rem 1rem;
+  margin: 5rem;
+  color: var(--lightText);
+  background-color: var(--background);
+  border-radius: .5rem;
+  transition: background-color .3s, color .3s;
+}
+
+.btn-tabs[data-theme='false'] {
+  color: var(--darkText);
+  background-color: var(--background);
 }
