@@ -12,14 +12,6 @@ function App() {
   const [currentTab, setCurrentTab] = useState('About Me');
   const [theme, setCurrentTheme] = useState(false);
 
-  const updateTab = (tab) => {
-    setCurrentTab(tab)
-  }
-
-  const updateTheme = () => {
-    setCurrentTheme(!theme)
-  }
-
   const appVariant = {
     tabInitial: {
       opacity: 0,
@@ -42,26 +34,32 @@ function App() {
   }
 
   return (
-    <div className='App' data-theme={theme} key={currentTab}>
+    <div >
       <header>
-        <Header updateTab={updateTab} updateTheme={updateTheme} theme={theme} />
+        <Header
+          setCurrentTab={setCurrentTab}
+          setCurrentTheme={setCurrentTheme}
+          theme={theme}
+        />
       </header>
-      <AnimatePresence exitBeforeEnter>
-        <motion.section
-          key={currentTab}
-          className="app--container"
-          variants={appVariant}
-          initial='tabInitial'
-          animate='tabAnimate'
-          exit='tabExit'
-        >
-          {currentTab === 'Projects' ? <RepoList /> : null}
-          {currentTab === 'About Me' ? <Homepage theme={theme} /> : null}
-          {currentTab === 'Contact Me' ? <ContactMe /> : null}
-        </motion.section>
-      </AnimatePresence >
-      <Footer />
-    </div>
+      <div className='App' data-theme={theme}>
+        <AnimatePresence exitBeforeEnter>
+          <motion.section
+            className='app--container'
+            key={currentTab}
+            variants={appVariant}
+            initial='tabInitial'
+            animate='tabAnimate'
+            exit='tabExit'
+          >
+            {currentTab === 'Projects' ? <RepoList theme={theme} /> : null}
+            {currentTab === 'About Me' ? <Homepage theme={theme} /> : null}
+            {currentTab === 'Contact Me' ? <ContactMe /> : null}
+          </motion.section>
+        </AnimatePresence >
+        <Footer />
+      </div>
+    </div >
   );
 }
 

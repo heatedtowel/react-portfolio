@@ -13,12 +13,17 @@ const technologies = ({ variant, theme }) => {
     <motion.div
       className='skills'
       data-theme={theme}
-      initial={{ opacity: 0 }}
+      initial={{
+        opacity: 0,
+        x: '-100vw'
+      }}
       variants={variant.skills}
       animate='card'
     >
       <ul>
         {technologies.map((item) => <li>{item}</li>)}
+      </ul>
+      <ul>
         {frameworks.map((item) => <li>{item}</li>)}
       </ul>
     </motion.div>

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import './assets/css/header.css'
 import Resume from './assets/Resume.pdf'
 
-export default function Header({ theme, updateTab, updateTheme }) {
+export default function Header({ theme, setCurrentTab, setCurrentTheme }) {
 
   const spring = {
     type: "spring",
@@ -19,10 +19,10 @@ export default function Header({ theme, updateTab, updateTheme }) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Navigation updateTab={updateTab} />
+            <Navigation setCurrentTab={setCurrentTab} />
             <Nav.Link className='navLinks' key='resume' href={Resume}>Resume</Nav.Link>
           </Nav>
-          <div className="switch" data-isOn={theme} onClick={() => updateTheme()}>
+          <div className="switch" data-isOn={theme} onClick={() => setCurrentTheme(!theme)}>
             <motion.div
               className="handle"
               data-isOn={theme}

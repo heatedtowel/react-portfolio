@@ -1,7 +1,7 @@
 import { Nav } from "react-bootstrap";
 
 
-export default function Navigation({ updateTab }) {
+export default function Navigation({ setCurrentTab }) {
 
   const navLinks = ["About Me", "Projects"]
 
@@ -12,7 +12,7 @@ export default function Navigation({ updateTab }) {
         className='navLinks'
         key={tab}
         href={`#${tab}`}
-        onClick={() => updateTab(tab)}
+        onClick={() => setCurrentTab(tab)}
       >{tab}
       </Nav.Link>)
       )}
