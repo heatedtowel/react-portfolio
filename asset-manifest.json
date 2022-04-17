@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.872e78bd.css",
-    "main.js": "/react-portfolio/static/js/main.5027fe9f.js",
+    "main.css": "/react-portfolio/static/css/main.0efd6811.css",
+    "main.js": "/react-portfolio/static/js/main.0c515a9b.js",
     "static/media/matt-walsh-tVkdGtEe2C4-unsplash.jpg": "/react-portfolio/static/media/matt-walsh-tVkdGtEe2C4-unsplash.5aeb723656fac7c552a1.jpg",
     "static/media/myke-simon-atsUqIm3wxo-unsplash.jpg": "/react-portfolio/static/media/myke-simon-atsUqIm3wxo-unsplash.d4b7b91a2b7e37e3c87a.jpg",
     "static/media/mark-konig-Tl8mDaue_II-unsplash.jpg": "/react-portfolio/static/media/mark-konig-Tl8mDaue_II-unsplash.5c599d957493b8e2a8c5.jpg",
@@ -11,11 +11,11 @@
     "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.ab8f10cd086b2a72882a.pdf",
     "static/media/vinyl.jpg": "/react-portfolio/static/media/vinyl.ac7fbb2660c1c57837c3.jpg",
     "index.html": "/react-portfolio/index.html",
-    "main.872e78bd.css.map": "/react-portfolio/static/css/main.872e78bd.css.map",
-    "main.5027fe9f.js.map": "/react-portfolio/static/js/main.5027fe9f.js.map"
+    "main.0efd6811.css.map": "/react-portfolio/static/css/main.0efd6811.css.map",
+    "main.0c515a9b.js.map": "/react-portfolio/static/js/main.0c515a9b.js.map"
   },
   "entrypoints": [
-    "static/css/main.872e78bd.css",
-    "static/js/main.5027fe9f.js"
+    "static/css/main.0efd6811.css",
+    "static/js/main.0c515a9b.js"
   ]
 }
