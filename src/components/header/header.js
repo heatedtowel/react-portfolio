@@ -3,6 +3,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { motion } from 'framer-motion'
 import './assets/css/header.css'
 import Resume from './assets/Resume.pdf'
+import { BsLightbulb } from 'react-icons/bs'
 
 export default function Header({ theme, setCurrentTab, setCurrentTheme }) {
 
@@ -24,9 +25,12 @@ export default function Header({ theme, setCurrentTab, setCurrentTheme }) {
           </Nav>
           <div className="switch" data-isOn={theme} onClick={() => setCurrentTheme(!theme)}>
             <motion.div
+              initial={{ backgroundColor: 'white' }}
               className="handle"
               data-isOn={theme}
               transition={spring}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: .9 }}
               layout
             />
           </div>

@@ -4,8 +4,12 @@
 }
 
 .skills {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
   color: var(--lightText);
-  padding: 3rem;
+  padding: 1rem;
   min-width: fit-content;
   letter-spacing: 2px;
   transition: color .3s, border .3s, box-shadow .3s;
@@ -17,4 +21,11 @@
   color: var(--darkText);
   -webkit-box-shadow: 5px 5px 9px 5px rgba(111, 111, 111, 0.39);
   box-shadow: 5px 5px 9px 5px rgba(111, 111, 111, 0.39);
+}
+
+.icons {
+  padding: 1rem;
+  gap: 1rem;
+  list-style: none;
+  font-size: 3rem;
 }
