@@ -24,10 +24,7 @@ const technologies = ({ variant, theme }) => {
     <motion.div
       className='skills'
       data-theme={theme}
-      initial={{
-        opacity: 0,
-        x: '-100vw'
-      }}
+      initial='hidden'
       variants={variant.skills}
       animate='card'
     >

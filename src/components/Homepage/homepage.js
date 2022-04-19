@@ -41,12 +41,17 @@ export default function Homepage({ theme }) {
       }
     },
     skills: {
+      hidden: {
+        opacity: 0,
+        x: '-100vw'
+      },
       card: {
         opacity: 1,
         x: 0,
         borderRadius: '1rem',
         backgroundColor: 'rgba(93, 115, 126, .3)',
         transition: {
+          staggerChildren: 0.5,
           y: { duration: .5 },
           opacity: { duration: 1 },
           borderRadius: { duration: 1 },
@@ -54,8 +59,10 @@ export default function Homepage({ theme }) {
         }
       }
     },
-    button: {
-      hidden: { opacity: 0 },
+    container: {
+      hidden: {
+        opacity: 0,
+      },
       show: {
         opacity: 1,
         transition: {
@@ -63,7 +70,7 @@ export default function Homepage({ theme }) {
         }
       }
     },
-    card: {
+    item: {
       hidden: { opacity: 0 },
       show: { opacity: 1 }
     }
@@ -73,14 +80,14 @@ export default function Homepage({ theme }) {
     <div className='main--container'>
       <motion.div
         className='btn--container'
-        variants={homeVariant.button}
+        variants={homeVariant.container}
         initial="hidden"
         animate="show"
       >
         {tabs.map((tab) => {
           return (
             <motion.button
-              variants={homeVariant.card}
+              variants={homeVariant.item}
               key={tab}
               className='btn-tabs'
               whileHover={{ scale: 1.1 }}
