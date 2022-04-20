@@ -45,13 +45,13 @@ export default function Homepage({ theme }) {
         opacity: 0,
         x: '-100vw'
       },
-      card: {
+      show: {
         opacity: 1,
         x: 0,
         borderRadius: '1rem',
         backgroundColor: 'rgba(93, 115, 126, .3)',
         transition: {
-          staggerChildren: 0.5,
+          staggerChildren: 0.3,
           y: { duration: .5 },
           opacity: { duration: 1 },
           borderRadius: { duration: 1 },
@@ -72,7 +72,13 @@ export default function Homepage({ theme }) {
     },
     item: {
       hidden: { opacity: 0 },
-      show: { opacity: 1 }
+      show: { opacity: 1 },
+      hover: {
+        scale: 1.1,
+        transition: {
+          yoyo: Infinity
+        }
+      }
     }
   }
 
@@ -90,7 +96,7 @@ export default function Homepage({ theme }) {
               variants={homeVariant.item}
               key={tab}
               className='btn-tabs'
-              whileHover={{ scale: 1.1 }}
+              whileHover='hover'
               whileTap={{ scale: .9 }}
               data-theme={theme}
               onClick={() => setTab(tab)}

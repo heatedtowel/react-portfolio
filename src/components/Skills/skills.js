@@ -24,16 +24,16 @@ const technologies = ({ variant, theme }) => {
     <motion.div
       className='skills'
       data-theme={theme}
-      initial='hidden'
       variants={variant.skills}
-      animate='card'
+      initial="hidden"
+      animate="show"
     >
-      <ul className='icons'>
-        {technologies.map((item) => <li>{item}</li>)}
-      </ul>
-      <ul className='icons'>
-        {frameworks.map((item) => <li>{item}</li>)}
-      </ul>
+      <motion.ul className='icons'>
+        {technologies.map((item) => <motion.li variants={variant.item}>{item}</motion.li>)}
+      </motion.ul>
+      <motion.ul className='icons'>
+        {frameworks.map((item) => <motion.li variants={variant.item}>{item}</motion.li>)}
+      </motion.ul>
     </motion.div>
   )
 }

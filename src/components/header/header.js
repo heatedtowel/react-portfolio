@@ -3,7 +3,6 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { motion } from 'framer-motion'
 import './assets/css/header.css'
 import Resume from './assets/Resume.pdf'
-import { BsLightbulb } from 'react-icons/bs'
 
 export default function Header({ theme, setCurrentTab, setCurrentTheme }) {
 
@@ -21,16 +20,15 @@ export default function Header({ theme, setCurrentTab, setCurrentTheme }) {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Navigation setCurrentTab={setCurrentTab} />
-            <Nav.Link className='navLinks' key='resume' href={Resume}>Resume</Nav.Link>
+            <Nav.Link className='navLinks' key='resume' href={Resume} target="_blank">Resume</Nav.Link>
           </Nav>
           <div className="switch" data-isOn={theme} onClick={() => setCurrentTheme(!theme)}>
             <motion.div
-              initial={{ backgroundColor: 'white' }}
               className="handle"
               data-isOn={theme}
               transition={spring}
               whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: .9 }}
+              whileTap={{ scale: 0 }}
               layout
             />
           </div>
