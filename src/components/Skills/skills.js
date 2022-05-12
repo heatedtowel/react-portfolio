@@ -16,23 +16,65 @@ import { SiApollographql } from 'react-icons/si'
 
 const technologies = ({ variant, theme }) => {
 
-  const technologies = [<DiHtml5 />, <DiCss3 />, <DiJavascript1 />, <DiMongodb />, <DiMysql />]
+  const icons = {
+    technologies: [<DiHtml5 />, <DiCss3 />, <DiJavascript1 />, <DiMongodb />, <DiMysql />],
+    frameworks: [<DiReact />, <FiFramer />, <DiBootstrap />, <GrGraphQl />, <SiApollographql />]
+  }
 
-  const frameworks = [<DiReact />, <FiFramer />, <DiBootstrap />, <GrGraphQl />, <SiApollographql />]
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        delayChildren: .3,
+        staggerChildren: 0.3
+      }
+    }
+  }
+
+  const container2 = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        delayChildren: 1.5,
+        staggerChildren: 0.3
+      }
+    }
+  }
+
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 }
+  }
+
 
   return (
     <motion.div
       className='skills'
       data-theme={theme}
+      initial={{
+        opacity: 0,
+        x: '-100vw'
+      }}
       variants={variant.skills}
-      initial="hidden"
-      animate="show"
+      animate='card'
     >
-      <motion.ul className='icons'>
-        {technologies.map((item) => <motion.li variants={variant.item}>{item}</motion.li>)}
+      <motion.ul
+        className='icons'
+        variants={container}
+        initial="hidden"
+        animate="show"
+      >
+        {icons.technologies.map((icon) => <motion.li variants={item}>{icon}</motion.li>)}
       </motion.ul>
-      <motion.ul className='icons'>
-        {frameworks.map((item) => <motion.li variants={variant.item}>{item}</motion.li>)}
+      <motion.ul
+        className='icons'
+        variants={container2}
+        initial="hidden"
+        animate="show"
+      >
+        {icons.frameworks.map((icon) => <motion.li variants={item}>{icon}</motion.li>)}
       </motion.ul>
     </motion.div>
   )

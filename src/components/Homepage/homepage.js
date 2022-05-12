@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion'
 import Motivation from '../Motivation/motivation';
-import AboutMe from '../AboutMe/aboutMe';
+import AboutMe from '../aboutMe/aboutMe';
 import Skills from '../Skills/skills';
 import './assets/css/homepage.css'
 
