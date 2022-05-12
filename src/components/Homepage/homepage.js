@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import Motivation from '../Motivation/motivation';
 import AboutMe from '../AboutMe/aboutMe';
 import Skills from '../Skills/skills';
@@ -9,7 +9,7 @@ export default function Homepage({ theme }) {
 
   const tabs = ['About Me', 'Motivation', 'Proficiencies']
 
-  const [tab, setTab] = useState('');
+  const [tab, setTab] = useState('About Me');
 
   const homeVariant = {
     aboutMe: {
@@ -17,12 +17,11 @@ export default function Homepage({ theme }) {
         opacity: 1,
         x: 0,
         borderRadius: '1rem',
-        backgroundColor: 'rgba(93, 115, 126, .3)',
         transition: {
           y: { duration: .5 },
-          opacity: { duration: 1 },
-          borderRadius: { duration: 1 },
-          backgroundColor: { duration: 1 }
+          opacity: { duration: .5 },
+          borderRadius: { duration: .5 },
+          backgroundColor: { duration: .5 }
         }
       }
     },
@@ -31,55 +30,28 @@ export default function Homepage({ theme }) {
         opacity: 1,
         x: 0,
         borderRadius: '1rem',
-        backgroundColor: 'rgba(93, 115, 126, .3)',
         transition: {
           y: { duration: .5 },
-          opacity: { duration: 1 },
-          borderRadius: { duration: 1 },
-          backgroundColor: { duration: 1 }
+          opacity: { duration: .5 },
+          borderRadius: { duration: .5 },
+          backgroundColor: { duration: .5 }
         }
       }
     },
     skills: {
-      hidden: {
-        opacity: 0,
-        x: '-100vw'
-      },
-      show: {
+      card: {
         opacity: 1,
         x: 0,
         borderRadius: '1rem',
-        backgroundColor: 'rgba(93, 115, 126, .3)',
         transition: {
-          staggerChildren: 0.3,
+          staggerChildren: 0.2,
           y: { duration: .5 },
-          opacity: { duration: 1 },
-          borderRadius: { duration: 1 },
-          backgroundColor: { duration: 1 }
+          opacity: { duration: .5 },
+          borderRadius: { duration: .5 },
+          backgroundColor: { duration: .5 }
         }
       }
     },
-    container: {
-      hidden: {
-        opacity: 0,
-      },
-      show: {
-        opacity: 1,
-        transition: {
-          staggerChildren: 0.5
-        }
-      }
-    },
-    item: {
-      hidden: { opacity: 0 },
-      show: { opacity: 1 },
-      hover: {
-        scale: 1.1,
-        transition: {
-          yoyo: Infinity
-        }
-      }
-    }
   }
 
   return (
@@ -105,11 +77,12 @@ export default function Homepage({ theme }) {
           )
         })}
       </motion.div>
-
       <motion.div>
-        {tab === 'About Me' ? <AboutMe key='About Me' variant={homeVariant} theme={theme} tab={tab} /> : null}
-        {tab === 'Motivation' ? <Motivation key='Motivation' variant={homeVariant} theme={theme} /> : null}
-        {tab === 'Proficiencies' ? <Skills key='Skills' variant={homeVariant} theme={theme} /> : null}
+        <AnimatePresence key={tab} exitBeforeEnter>
+          {tab === 'About Me' ? <AboutMe key='About Me' variant={homeVariant} theme={theme} tab={tab} /> : null}
+          {tab === 'Motivation' ? <Motivation key='Motivation' variant={homeVariant} theme={theme} /> : null}
+          {tab === 'Proficiencies' ? <Skills key='Skills' variant={homeVariant} theme={theme} /> : null}
+        </AnimatePresence >
       </motion.div >
     </div>
   )
