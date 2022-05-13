@@ -33,14 +33,12 @@ function App() {
 
   return (
     <div >
-      <header>
+      <div className='App' data-theme={theme}>
         <Header
           setCurrentTab={setCurrentTab}
           setCurrentTheme={setCurrentTheme}
           theme={theme}
         />
-      </header>
-      <div className='App' data-theme={theme}>
         <Homepage theme={theme} />
         {/* <AnimatePresence exitBeforeEnter>
           <motion.section
