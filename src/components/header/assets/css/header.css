@@ -28,3 +28,23 @@
   background-color: rgb(212, 212, 212);
   border-radius: 40px;
 }
+
+.icons {
+  display: flex;
+  color: #417257e3;
+  gap: 1rem;
+  transform: translateY(-1rem);
+  list-style: none;
+  font-size: 2vw;
+  margin: 0;
+  padding: 0 2rem;
+}
+
+.icons>i {
+  display: flex;
+  transition: all .3s;
+}
+
+.icons[data-theme='false'] {
+  color: #0C494F;
+}

@@ -26,7 +26,7 @@ const technologies = ({ variant, theme }) => {
     show: {
       opacity: 1,
       transition: {
-        delayChildren: .3,
+        delayChildren: .5,
         staggerChildren: 0.3
       }
     }
@@ -37,7 +37,7 @@ const technologies = ({ variant, theme }) => {
     show: {
       opacity: 1,
       transition: {
-        delayChildren: 1.5,
+        delayChildren: 1.8,
         staggerChildren: 0.3
       }
     }

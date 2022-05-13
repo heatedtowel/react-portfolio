@@ -2,10 +2,8 @@ import './App.css';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Header from './components/header/header';
-import RepoList from './components/repositoryList/repoList';
-import Homepage from './components/Homepage/homepage.js'
-import ContactMe from './components/contactMe/contactMe'
 import Footer from './components/footer/footer'
+import Homepage from './components/Homepage/homepage';
 
 function App() {
 
@@ -43,7 +41,8 @@ function App() {
         />
       </header>
       <div className='App' data-theme={theme}>
-        <AnimatePresence exitBeforeEnter>
+        <Homepage theme={theme} />
+        {/* <AnimatePresence exitBeforeEnter>
           <motion.section
             className='app--container'
             key={currentTab}
@@ -56,7 +55,7 @@ function App() {
             {currentTab === 'About Me' ? <Homepage theme={theme} /> : null}
             {currentTab === 'Contact Me' ? <ContactMe /> : null}
           </motion.section>
-        </AnimatePresence >
+        </AnimatePresence > */}
         <Footer />
       </div>
     </div >

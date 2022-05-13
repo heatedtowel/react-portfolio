@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion'
 import Motivation from '../Motivation/motivation';
-import AboutMe from '../aboutMe/aboutMe';
+import AboutMe from '../AboutMe/aboutMe';
 import Skills from '../Skills/skills';
+import Projects from '../repositoryList/repoList'
+import RepoList from '../repositoryList/repoList';
+import ContactMe from '../contactMe/contactMe'
 import './assets/css/homepage.css'
 
 export default function Homepage({ theme }) {
@@ -56,7 +59,11 @@ export default function Homepage({ theme }) {
 
   return (
     <div className='main--container'>
-      <motion.div
+      <AboutMe key='About Me' variant={homeVariant} theme={theme} tab={tab} />
+      <Motivation key='Motivation' variant={homeVariant} theme={theme} />
+      {/* <Skills key='Skills' variant={homeVariant} theme={theme} /> */}
+      <Projects />
+      {/* <motion.div
         className='btn--container'
         variants={homeVariant.container}
         initial="hidden"
@@ -83,7 +90,7 @@ export default function Homepage({ theme }) {
           {tab === 'Motivation' ? <Motivation key='Motivation' variant={homeVariant} theme={theme} /> : null}
           {tab === 'Proficiencies' ? <Skills key='Skills' variant={homeVariant} theme={theme} /> : null}
         </AnimatePresence >
-      </motion.div >
+      </motion.div > */}
     </div>
   )
 };
