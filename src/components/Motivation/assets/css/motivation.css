@@ -17,11 +17,12 @@
   transition: color .3s, border .3s, box-shadow .3s;
   -webkit-box-shadow: 5px 5px 9px 5px rgba(0, 0, 0, 0.39);
   box-shadow: 5px 5px 9px 5px rgba(0, 0, 0, 0.39);
+  transition: all .3s;
 }
 
 .motivation[data-theme='false'] {
   color: #FFFFFF;
-  background-color: #0C494F;
+  background-color: #0c494fc0;
   -webkit-box-shadow: 5px 5px 9px 5px rgba(111, 111, 111, 0.39);
   box-shadow: 5px 5px 9px 5px rgba(111, 111, 111, 0.39);
 }

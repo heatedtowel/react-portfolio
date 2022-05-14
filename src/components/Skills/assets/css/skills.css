@@ -28,10 +28,3 @@
   -webkit-box-shadow: 5px 5px 9px 5px rgba(111, 111, 111, 0.39);
   box-shadow: 5px 5px 9px 5px rgba(111, 111, 111, 0.39);
 }
-
-.icons {
-  padding: 1rem;
-  gap: 1rem;
-  list-style: none;
-  font-size: 3rem;
-}

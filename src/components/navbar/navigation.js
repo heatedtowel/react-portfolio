@@ -1,6 +1,5 @@
 import { Nav } from "react-bootstrap";
 
-
 export default function Navigation({ setCurrentTab }) {
 
   const navLinks = ["About Me", "Projects"]

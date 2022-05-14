@@ -12,6 +12,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 60vw;
+  margin: 0 auto;
 }
 
 .btn--container {
@@ -41,5 +43,9 @@
   .btn--container {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .main--container {
+    max-width: 80vw;
   }
 }
