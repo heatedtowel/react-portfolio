@@ -3,7 +3,7 @@
   min-height: 100vh;
   font-family: 'Lora', serif;
   background: #F5F5F5;
-  background-image: url(/src/components/background.jpg);
+  background-image: url(/src/components/background-light.jpg);
   background-size: cover;
   background-position: center;
   transition: background .3s;
@@ -12,4 +12,8 @@
 .app--container {
   margin: 0 auto;
   max-width: 50vw;
+}
+
+.App[data-theme='false'] {
+  background-image: url(/src/components/background-dark.jpg);
 }

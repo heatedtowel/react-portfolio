@@ -21,12 +21,6 @@ export default function Header({ theme, setCurrentTab, setCurrentTheme }) {
 
   const icons = [<DiHtml5 />, <DiCss3 />, <DiJavascript1 />, <DiMongodb />, <DiMysql />, <DiReact />, <FiFramer />, <DiBootstrap />, <GrGraphQl />, <SiApollographql />]
 
-  const determineColor = () => {
-    let colors = ['blue', 'purple', 'green']
-
-    console.log(colors[Math.floor(Math.random() * colors.length)])
-  }
-
   const container = {
     hidden: { opacity: 0, y: '-80px' },
     show: {
@@ -40,10 +34,9 @@ export default function Header({ theme, setCurrentTab, setCurrentTheme }) {
       }
     },
     hover: {
-      scale: 1.2,
+      color: ['rgb(117,7,135)', 'rgb(228,3,3)', 'rgb(255,140,0)', 'rgb(255,237,0)', 'rgb(0,128,38)', 'rgb(0,77,255)'],
       transition: {
-        duration: 0.3,
-        yoyo: Infinity
+        color: { duration: 1.5, repeat: Infinity }
       }
     }
   };
@@ -56,7 +49,10 @@ export default function Header({ theme, setCurrentTab, setCurrentTheme }) {
 
   return (
     <div className="header--container">
-      <h1>JM</h1>
+      <div className="name--container">
+        <motion.h1 variants={container} whileHover='hover'>JM</motion.h1>
+        <motion.a href={Resume} target="_blank" variants={container} whileHover='hover'>Resume</motion.a>
+      </div>
       <motion.div
         className='icons'
         variants={container}
@@ -64,15 +60,16 @@ export default function Header({ theme, setCurrentTab, setCurrentTheme }) {
         animate="show"
         data-theme={theme}
       >
-        {icons.map((icon) => {
+        {icons.map((icon, i) => {
           return (
             <motion.i
               variants={container}
               whileHover={{
-                scale: 1.3,
-                color: { determineColor },
+                scale: [1, 1.3],
+                color: ['rgb(117,7,135)', 'rgb(228,3,3)', 'rgb(255,140,0)', 'rgb(255,237,0)', 'rgb(0,128,38)', 'rgb(0,77,255)'],
                 transition: {
-                  scale: { repeat: 0.3, yoyo: Infinity }
+                  color: { duration: 1.5, repeat: Infinity },
+                  scale: { repeat: Infinity }
                 }
               }}>
               {icon}
@@ -84,7 +81,7 @@ export default function Header({ theme, setCurrentTab, setCurrentTheme }) {
             data-isOn={theme}
             transition={spring}
             whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0 }}
+            whileTap={{ scale: .6 }}
             layout
           />
         </div>
