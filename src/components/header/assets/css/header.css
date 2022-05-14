@@ -15,6 +15,10 @@
   gap: 1rem;
   padding: .5rem;
   margin: 0;
+  color: black;
+}
+
+.name--container[data-theme="false"] {
   color: white;
 }
 
@@ -30,7 +34,6 @@
   text-decoration: none;
   font-size: 2rem;
   margin: 0;
-  color: white;
 }
 
 
@@ -56,7 +59,7 @@
 }
 
 .handle[data-isOn="false"] {
-  background-color: #c4c4c4 !important;
+  background-color: #c4c4c4;
 }
 
 .handle {
@@ -73,14 +76,22 @@
   list-style: none;
   font-size: 2rem;
   margin: 0;
+  color: black;
 }
 
 .icons>i {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   transition: all .3s;
 }
 
-.icons[data-theme='false'] {}
+.icons[data-theme='false'] {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .header--container {
+    flex-direction: column;
+  }
+}
