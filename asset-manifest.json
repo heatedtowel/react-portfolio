@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.f2986f27.css",
-    "main.js": "/react-portfolio/static/js/main.a90b5c03.js",
+    "main.css": "/react-portfolio/static/css/main.df87c963.css",
+    "main.js": "/react-portfolio/static/js/main.8079c979.js",
+    "static/media/background-dark.jpg": "/react-portfolio/static/media/background-dark.acd58e4eaecc8746f345.jpg",
+    "static/media/background-light.jpg": "/react-portfolio/static/media/background-light.c22be54e81642f56d712.jpg",
     "static/media/matt-walsh-tVkdGtEe2C4-unsplash.jpg": "/react-portfolio/static/media/matt-walsh-tVkdGtEe2C4-unsplash.5aeb723656fac7c552a1.jpg",
     "static/media/myke-simon-atsUqIm3wxo-unsplash.jpg": "/react-portfolio/static/media/myke-simon-atsUqIm3wxo-unsplash.d4b7b91a2b7e37e3c87a.jpg",
     "static/media/mark-konig-Tl8mDaue_II-unsplash.jpg": "/react-portfolio/static/media/mark-konig-Tl8mDaue_II-unsplash.5c599d957493b8e2a8c5.jpg",
     "static/media/jason-dent-3wPJxh-piRw-unsplash.jpg": "/react-portfolio/static/media/jason-dent-3wPJxh-piRw-unsplash.08762391e6194befca6c.jpg",
     "static/media/noaa-ZVhm6rEKEX8-unsplash.jpg": "/react-portfolio/static/media/noaa-ZVhm6rEKEX8-unsplash.8a20e08bb212b32dd66c.jpg",
     "static/media/gabby-orcutt-3QUklJkVFyY-unsplash.jpg": "/react-portfolio/static/media/gabby-orcutt-3QUklJkVFyY-unsplash.cda656ddaf1aaa3bab31.jpg",
-    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.ab8f10cd086b2a72882a.pdf",
+    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.1d99b13c2c41398b8dc0.pdf",
     "static/media/vinyl.jpg": "/react-portfolio/static/media/vinyl.ac7fbb2660c1c57837c3.jpg",
     "index.html": "/react-portfolio/index.html",
-    "main.f2986f27.css.map": "/react-portfolio/static/css/main.f2986f27.css.map",
-    "main.a90b5c03.js.map": "/react-portfolio/static/js/main.a90b5c03.js.map"
+    "main.df87c963.css.map": "/react-portfolio/static/css/main.df87c963.css.map",
+    "main.8079c979.js.map": "/react-portfolio/static/js/main.8079c979.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2986f27.css",
-    "static/js/main.a90b5c03.js"
+    "static/css/main.df87c963.css",
+    "static/js/main.8079c979.js"
   ]
 }
