@@ -1,12 +1,13 @@
 .App {
   width: 100%;
+  min-width: 101vw;
   min-height: 100vh;
   font-family: 'Lora', serif;
   background: #F5F5F5;
   background-image: url(/src/components/background-light.jpg);
   background-size: cover;
   background-position: center;
-  transition: background .3s;
+  transition: all 1s;
 }
 
 .app--container {
