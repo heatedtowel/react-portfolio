@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.df87c963.css",
-    "main.js": "/react-portfolio/static/js/main.8079c979.js",
+    "main.css": "/react-portfolio/static/css/main.2a36e11f.css",
+    "main.js": "/react-portfolio/static/js/main.8560c322.js",
     "static/media/background-dark.jpg": "/react-portfolio/static/media/background-dark.acd58e4eaecc8746f345.jpg",
     "static/media/background-light.jpg": "/react-portfolio/static/media/background-light.c22be54e81642f56d712.jpg",
     "static/media/matt-walsh-tVkdGtEe2C4-unsplash.jpg": "/react-portfolio/static/media/matt-walsh-tVkdGtEe2C4-unsplash.5aeb723656fac7c552a1.jpg",
@@ -13,11 +13,11 @@
     "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.1d99b13c2c41398b8dc0.pdf",
     "static/media/vinyl.jpg": "/react-portfolio/static/media/vinyl.ac7fbb2660c1c57837c3.jpg",
     "index.html": "/react-portfolio/index.html",
-    "main.df87c963.css.map": "/react-portfolio/static/css/main.df87c963.css.map",
-    "main.8079c979.js.map": "/react-portfolio/static/js/main.8079c979.js.map"
+    "main.2a36e11f.css.map": "/react-portfolio/static/css/main.2a36e11f.css.map",
+    "main.8560c322.js.map": "/react-portfolio/static/js/main.8560c322.js.map"
   },
   "entrypoints": [
-    "static/css/main.df87c963.css",
-    "static/js/main.8079c979.js"
+    "static/css/main.2a36e11f.css",
+    "static/js/main.8560c322.js"
   ]
 }
